@@ -6,6 +6,9 @@
 </head>
 <body>
     <script>
+        let confirmAnswer = confirm("Shall we play a game?");
+        let theAnswer = processConfirm(confirmAnswer);
+
         function processConfirm(answer) {
             let result = "";
             if (answer){
@@ -15,10 +18,8 @@
             }
             return result;
         }
-
-        let confirmAnswer = confirm("Shall we play a game?");
-        let theAnswer = processConfirm(confirmAnswer);
         alert(theAnswer);
+
     </script>
 </body>
 </html>
