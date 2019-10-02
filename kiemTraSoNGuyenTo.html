@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Nhập vào một số: "));
+
+        function isPrime(number) {
+            for (i = 0; i < Math.sqrt(number); i++) {
+                if (number % i == 0) {
+                    alert("so do khong phai so nguyen to");
+                    return false;
+                }
+            }
+
+            alert("so do la so nguyen to ");
+            return true;
+        }
+
+        let m=isPrime(a);
+        console.log(m);
+
+    </script>
+</body>
+</html>
