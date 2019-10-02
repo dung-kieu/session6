@@ -5,6 +5,25 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let a=prompt("Enter your star ");
+    b=["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    c=["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+    let flag = false;
 
+    function star(star) {
+        for (let i=0;i<b.length;i++) {
+            if (star==b[i]) {
+                flag = true;
+                alert("sao đó thuộc chòm sao : " + c[i]);
+                break;
+            }
+        } if (flag==false)
+        alert("ko tìm thấy ");
+    }
+
+    let d=star(a);
+    console.log(d);
+</script>
 </body>
 </html>
