@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label>
+        Nhập Vào Bán Kính <input type="text" id="input" oninput="Count()"/>
+        <br>
+        Diện tích : <span id="S"></span>
+        <br>
+        Chu Vi : <span id="C"></span>
+    </label>
+
+    <script>
+        function arc(r) {
+            let arc=3.14*r*r;
+            return arc;
+        }
+
+        function per(r) {
+            let per=2*3.14*r;
+            return per;
+        }
+        
+        function Count() {
+            let a = document.getElementById("input").value;
+            let b =arc(a);
+            let c =per(a);
+            document.getElementById("S").innerHTML=b;
+            document.getElementById("C").innerHTML=c;
+        }
+
+    </script>
+</body>
+</html>
