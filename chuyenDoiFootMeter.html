@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form>
+        <p>
+            <label>Foot<=>Meter</label>
+            <label>
+                <input type="number" id="input" >
+                <br>
+                <button type="button" value="meter" onclick="meterToFoot()">meter-->foot</button>
+                <button type="button" value="foot" onclick="footToMeter()">foot-->meter</button>
+            </label>
+        </p>
+
+        <p>Result : <span id="out"></span></p>
+    </form>
+
+    <script>
+        function meterToFoot() {
+            valNum=parseFloat(document.getElementById("input").value);
+            document.getElementById("out").innerText =(valNum/0.305);
+
+        }
+
+        function footToMeter() {
+            val=parseFloat(document.getElementById("input").value);
+            document.getElementById("out").innerText =(val/3.279);
+        }
+    </script>
+</body>
+</html>
