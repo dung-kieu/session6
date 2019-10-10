@@ -5,17 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-    Square of <input type="text" id="input" oninput="Calculate()"/> is <span id="result"></span>
+    Square of <label for="input"></label><input type="text" id="input" oninput="Calculate()"/> is <span id="result"></span>
     <script>
         function square(number) {
-            let result=number*number;
-            return result;
+            return number * number;
         }
         
         function Calculate() {
-            let input=document.getElementById("input").value;
-            let result=square(input);
-            document.getElementById("result").innerText =result;
+            let input = document.getElementById("input").value;
+            document.getElementById("result").innerText =square(input);
         }
     </script>
 </body>
